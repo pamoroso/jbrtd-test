@@ -1,0 +1,5 @@
+title: "Publishing Jupiter Book documentation on Read The Docs"
+author: Paolo Amoroso
+execute:
+  execute_notebooks: "off"
+  
