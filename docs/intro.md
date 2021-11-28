@@ -1,4 +1,4 @@
-# Publishing Jupiter Book documentation on Read The Docs
+# About the project
 
 This mockup project is a test of using [Repl.it](https://repl.it) for writing documentation with [Jupiter Book](https://jupyterbook.org) and publishing it on [Read The Docs](https://readthedocs.org).
 
