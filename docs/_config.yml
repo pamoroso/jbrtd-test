@@ -1,2 +1,6 @@
 title: "A Read The Docs Publishing Test"
 author: Paolo Amoroso
+
+sphinx:
+  extra_extensions:
+  - 'sphinx.ext.autodoc'
