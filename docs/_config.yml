@@ -1,6 +1,6 @@
 title: "A Read The Docs Publishing Test"
 author: Paolo Amoroso
-logo: "../suite8080.jpg"
+logo: "suite8080logo.png"
 
 repository:
   url: https://github.com/pamoroso/jbrtd-test
