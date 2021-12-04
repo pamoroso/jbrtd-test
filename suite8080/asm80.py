@@ -168,24 +168,17 @@ def parse_db(line):
     """Parse db directive.
 
     Parse the source line to check whether it's a valid db directive. If it is
-    return 'db' as the second value and the arguments as the third. The first
-    value is the label if present, otherwise a null string.
+    return :python:`'db'` as the second value and the arguments as the third. The first value is the label if present, otherwise a null string.
 
     Assume the source line doesn't contain a comment.
 
-    Parameters
-    ----------
-        line : string
-            Source line
+    Args:
+        line (string): Source line
     
-    Returns
-    -------
-        label
-            Lowercase label if present, otherwise ''
-        directive
-            'db' if line contains a valid db directive, otherwise ''
-        arguments
-            Arguments if line contains a db directive, otherwise ''
+    Returns:
+        str: Lowercase label if present, otherwise :python:`''`
+        str: :python:`'db'` if line contains a valid db directive, otherwise :python:`''`
+        str: Arguments if line contains a :python:`db` directive, otherwise :python:`''`
     """
     db_label = db_directive = db_arguments = ''
 
@@ -411,14 +404,10 @@ def report_error(message):
 def pass_action(instruction_size, output_byte, should_add_label=True):
     """Build symbol table in pass 1, generate code in pass 2.
     
-    Parameters
-    ----------
-        instruction_size : int
-            Number of bytes of the instruction
-        output_byte : bytes
-            Opcode, b'' if no output should be generated.
-        should_add_label : Boolean
-            True if the label, when present, should be added
+    Args:
+        instruction_size (int): Number of bytes of the instruction
+        output_byte (bytes): Opcode, :python:`b''` if no output should be generated.
+        should_add_label (bool): True if the label, when present, should be added
     """
     global address, output
 
@@ -1068,7 +1057,7 @@ def is_char_constant(string):
     """Return True if string is a character constant.
 
     A character constant is a quote-delimited string containing only one character
-    such as 'Z' or '*'.
+    such as :python:`'Z'` or :python:`'*'`.
     """
     return len(string) == 3 and is_quote_delimited(string)
 
