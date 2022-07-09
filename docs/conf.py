@@ -34,8 +34,3 @@ pygments_style = 'sphinx'
 suppress_warnings = ['myst.domains']
 use_jupyterbook_latex = True
 use_multitoc_numbering = True
-
-import os
-import sys
-sys.path.insert(0, os.path.abspath(".."))
-
